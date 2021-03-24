@@ -1,0 +1,31 @@
+body#img{
+
+
+}
+#mainDiv {
+    background-image: url("bike.jpg");
+    opacity:0.7;
+    height: auto;
+    width: auto;
+    background-color:#333;
+}
+#left{
+    background-color:royalblue;
+    opacity:1.0;
+    border-radius:12px;
+    height:768px;
+    width:30%;
+
+
+}
+#title{
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding: 15px;
+    margin-bottom:0;
+}
+#description {
+    font-size: 1.1rem;
+    padding:15px;
+    margin-top:0;
+}

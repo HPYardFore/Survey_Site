@@ -1,31 +1,43 @@
-body#img{
-
-
+body{
+    font-size: 10px;
 }
-#mainDiv {
-    background-image: url("bike.jpg");
-    opacity:0.7;
-    height: auto;
-    width: auto;
-    background-color:#333;
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background: black;
 }
 #left{
     background-color:royalblue;
-    opacity:1.0;
     border-radius:12px;
-    height:768px;
-    width:30%;
-
-
+    flex: 1.7;
+}
+#center{
+    flex: 3;
+    background-image: url("bike.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:#333;
+    opacity:0.7;
+    
+}
+#right{
+    background-color:transparent;
+    flex: 1;
 }
 #title{
     font-size: 2.2rem;
     font-weight: bold;
     padding: 15px;
     margin-bottom:0;
+    text-align: center;
+
+
 }
 #description {
     font-size: 1.1rem;
     padding:15px;
     margin-top:0;
+    text-align: center;
 }

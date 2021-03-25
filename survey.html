@@ -12,10 +12,40 @@
         </h1>
         <p id="description">Tell us about yourself and your bike.</p>
         <form id="survey-form">
-            Full Name:<br><input type="text" required id="name" placeholder="Name:"><p>
-            Email Address:<br><input type="email" required id="email"placeholder="Email:""><p>
-            Number of Mountain Bikes:<br><input type="text" id="bikeNUM" placeholder="# (Optional)"> 
-            
+            <label id="name-label"for="name-label">Full Name:</label><br>
+            <input type="text" required id="name" name="name-label" placeholder="Name:"><p>
+            <label id="email-label"for="email-label">Email Address:</label><br>
+            <input type="email" required id="email" name="email-label" placeholder="Email:"><p>
+            <label id="number-label" for="number-label">Number of Mountain Bikes:</label><br>
+            <input type="number" min="1" max="99" name="number-label" id="number" placeholder="# (Optional)"> 
+            <p>
+            <Label for="bikeCompany">Please select your preferred manufacturer</Label>
+            <br>
+            <select id="dropdown" name="prefBrand">
+                <Option value="scruz">Santa Cruz</Option>
+                <option value="specialized">Specialized</option>
+                <Option value="trek">Trek</Option>
+            </select>
+            </p>
+            <p>
+                <Label for="bikeacc">Please check all preferred accessories:</Label><br>
+                <input type="checkbox" name="bikeacc" value="dropper">Dropper Post<br>
+                <input type="checkbox" name="bikeacc" value="fullsquish">Full Suspension<br>
+            </p>
+            <p>
+                <Label for="wheelSize">Select wheel size:</Label><br>
+                <input type="radio" name="wheelSize" value="29">29"<br>
+                <input type="radio" name="wheelSize" value="27.5">27.5"<br>
+            </p>
+            <p>
+                <label for="comments">Please add additional special requests below:</label><br>
+                <textarea name="comments" rows="10" cols="33">Special Requests:
+                </textarea>
+            </p>
+            <p>
+                <button type="submit" id="submit" name="survey-form">Submit
+                </button>
+            </p>
         </form>
     </div>
     <div id="center">
